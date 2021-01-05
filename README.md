@@ -11,7 +11,7 @@
 Tampermonkey会将脚本自动安装到浏览器上。
 
 
-[![](https://img.shields.io/badge/%E5%AE%89%E8%A3%85%E7%9B%B4%E9%93%BE-%F0%9F%90%92-blue.svg?longCache=true&style=flat-square)](https://github.com/Andiedie/sysu-badminton-court-booking/raw/master/sysu-badminton-court-booking.user.js)
+[![](https://img.shields.io/badge/%E5%AE%89%E8%A3%85%E7%9B%B4%E9%93%BE-%F0%9F%90%92-blue.svg?longCache=true&style=flat-square)](https://github.com/shuhangz/sysu-badminton-court-booking/raw/master/sysu-badminton-court-booking.user.js)
 
 ## 使用
 打开 [珠海校区羽毛球场预订](http://gym.sysu.edu.cn/product/show.html?id=161)，点击`自动预定`即可。
