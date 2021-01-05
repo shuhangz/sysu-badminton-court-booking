@@ -7,7 +7,8 @@
 - 若设定了多个时间段，则每个时间段都会预定一个场地
 
 ## 安装
-首先需要安装 [Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo)
+首先需要安装 [Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo)。然后使用浏览器访问这个链接：https://github.com/shuhangz/sysu-badminton-court-booking/raw/master/sysu-badminton-court-booking.user.js，Tampermonkey会将脚本自动安装到浏览器上。
+
 
 [![](https://img.shields.io/badge/%E5%AE%89%E8%A3%85%E7%9B%B4%E9%93%BE-%F0%9F%90%92-blue.svg?longCache=true&style=flat-square)](https://github.com/Andiedie/sysu-badminton-court-booking/raw/master/sysu-badminton-court-booking.user.js)
 
