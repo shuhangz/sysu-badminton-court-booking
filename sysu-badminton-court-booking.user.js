@@ -1,12 +1,12 @@
 // ==UserScript==
-// @name         中大东校羽毛球场地极简预定
+// @name         中大珠海校区羽毛球场地极简预定
 // @namespace    badminton.sysu.andiedie
-// @author       Andiedie
+// @author       Andiedie, Shuhangz
 // @license      MIT License
 // @homepageURL  https://github.com/Andiedie/sysu-badminton-court-booking
-// @match        http://gym.sysu.edu.cn/product/show.html?id=35*
-// @description  中大东校羽毛球场地极简预定
-// @version      0.3.2
+// @match        http://gym.sysu.edu.cn/product/show.html?id=161*
+// @description  中大珠海校区羽毛球场地极简预定
+// @version      0.3.3
 // @grant        none
 // @require      https://cdn.bootcss.com/axios/0.18.0/axios.min.js
 // @require      https://cdn.bootcss.com/date-fns/123/date_fns.min.js
@@ -47,7 +47,7 @@
     }
     // 确认预订信息
     // dayOffset：预定日距离今天还有多少天
-    const dayOffset = prompt('预定哪天的？\n0 for today.\n1 for tomorrow\netc.', 1);
+    const dayOffset = prompt('预定哪天的？\n0 for today.\n1 for tomorrow\n2 for the day after. \n etc.', 1);
     if (dayOffset === null) return;
     // targetDate：预定日
     const targetDate = new Date();
@@ -59,7 +59,7 @@
     const { data } = await axios.get('/product/getarea2.html', {
       params: {
         s_dates: formatedDate,
-        serviceid: '35',
+        serviceid: '161',
         type: 'day'
       }
     });
@@ -121,7 +121,7 @@
         ({ data } = await axios.get('/product/findOkArea.html', {
           params: {
             s_date: formatedDate,
-            serviceid: '35'
+            serviceid: '161'
           }
         }));
       } catch (err) {
